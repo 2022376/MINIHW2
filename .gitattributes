@@ -1,2 +1,77 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package oocminihw2;
+
+/**
+ *
+ * @author sweiss
+ */
+public class OOCMiniHW2 {
+
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+
+
+public abstract class Drivable extends Vehicle implements Drivable {
+
+    public Drivable(String make, String type, int numPassengers) {
+        // You should initialize the class field using these parameters
+        
+    }
+    
+        // Implementing the 'brake' method from the interface Drivable
+    @Override
+    public void accelerate(float speed) {
+        System.out.println("Accelerating the " + make + " to " + speed + " km/h.");
+    }
+    
+    @Override
+    public void brake() {
+        System.out.println("Braking the " + make);
+    }
+    
+    // Implementing the 'turn' method from the interface Drivable 
+    @Override
+    public void turn(float angle) {
+        System.out.println("Turning the " + make + " at an angle of " + angle + " degrees.");
+    }
+   
+    // Implementing the 'getDirection' method from the interface Drivable 
+    @Override
+    public float getDirection() {
+        return direction;
+    }
+    
+    // Implementing the 'getSpeed' method from the interface Drivable
+    @Override
+    public float getSpeed() {
+        return speed;
+    }
+    
+    // Implementing the 'getMake' method from the interface Drivable
+    @Override
+    public String getMake() {
+        return make;
+    }
+    // Implementing the 'getType' method from the interface Drivable
+    @Override
+    public String getType() {
+        return type; //is defined and initialized in the constructor
+    
+    }  
+    
+    //this methodo should be the entry point for program 
+    public void main(String[] args) {
+        
+        Drivable myVehicle = new Drivable("MyManufacturer", "MyType", 4) {};
+        
+    }
+}
+}
